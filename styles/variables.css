@@ -1,0 +1,17 @@
+:root {
+  /* Colors */
+  --sky-color-top: #1a1a2e;
+  --sky-color-bottom: #16213e;
+  --snow-white: #fff;
+  --snow-shadow: #e2e8f0;
+  --snow-color: #f7fafc;
+  --coal: #2d3436;
+  --carrot: #ff8c42;
+  --carrot-shadow: #e67e22;
+  --tree-dark: #2d5a27;
+  --tree-light: #3d7a37;
+  --trunk-dark: #5d4037;
+  --trunk-light: #795548;
+  --hat: #2d3436;
+  --scarf: #e74c3c;
+}

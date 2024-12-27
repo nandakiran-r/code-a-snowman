@@ -1,0 +1,150 @@
+@import 'variables.css';
+
+.tree {
+  position: absolute;
+  bottom: 22%;
+  z-index: 1;
+  transform-style: preserve-3d;
+}
+
+.tree1 { 
+  left: 20%; 
+  transform: scale(1.2) translateZ(-50px); 
+}
+
+.tree2 { 
+  right: 20%; 
+  transform: scale(0.9) translateZ(-30px);
+}
+
+.trunk {
+  width: 40px;
+  height: 80px;
+  background: linear-gradient(to right, var(--trunk-dark), var(--trunk-light));
+  position: relative;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.leaves {
+  position: relative;
+  width: 0;
+  height: 0;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.light {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.l1 {
+  left: 37px;
+  top: 24px;
+  background: #FF4500;
+  box-shadow: 0 0 15px #FF4500, 0 0 30px #FF4500, 0 0 45px #FF4500, 0 0 60px #FF4500;
+}
+
+.l2 {
+  left: 0px;
+  top: 7px;
+  background: #0f0;
+  box-shadow: 0 0 15px #0f0, 0 0 30px #0f0, 0 0 45px #0f0, 0 0 60px #0f0;
+}
+
+.l3 {
+  left: -33px;
+  top: 8px;
+  background: #2f66ff;
+  box-shadow: 0 0 15px #2f66ff, 0 0 30px #2f66ff, 0 0 45px #2f66ff, 0 0 60px #2f66ff;
+}
+
+.l4 {
+  left: -11px;
+  top: -34px;
+  background: rgb(255, 174, 0);
+  box-shadow: 0 0 15px rgb(255, 174, 0), 0 0 30px rgb(255, 174, 0), 0 0 45px rgb(255, 174, 0), 0 0 60px rgb(255, 174, 0);
+}
+
+.l5 {
+  left: -30px;
+  top: 73px;
+  background: #ff2fe3;
+  box-shadow: 0 0 15px #ff2fe3, 0 0 30px #ff2fe3, 0 0 45px #ff2fe3, 0 0 60px #ff2fe3;
+}
+
+.l6 {
+  left: 41px;
+  top: 140px;
+  background: rgb(255, 251, 0);
+  box-shadow: 0 0 15px rgb(255, 251, 0), 0 0 30px rgb(255, 251, 0), 0 0 45px rgb(255, 251, 0), 0 0 60px rgb(255, 251, 0);
+}
+
+.l7 {
+  left: 35px;
+  top: 73px;
+  background: #2fffee;
+  box-shadow: 0 0 15px #2fffee, 0 0 30px #2fffee, 0 0 45px #2fffee, 0 0 60px #2fffee;
+}
+
+.l8 {
+  left: 6px;
+  top: 112px;
+  background: rgb(0, 255, 98);
+  box-shadow: 0 0 15px rgb(0, 255, 98), 0 0 30px rgb(0, 255, 98), 0 0 45px rgb(0, 255, 98), 0 0 60px rgb(0, 255, 98);
+}
+
+.l9 {
+  left: -40px;
+  top: 125px;
+  background: #ffe1fb;
+  box-shadow: 0 0 15px #ffe1fb, 0 0 30px #ffe1fb, 0 0 45px #ffe1fb, 0 0 60px #ffe1fb;
+}
+
+.leaves::before,
+.leaves::after,
+.leaves {
+  content: '';
+  position: absolute;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 160px solid var(--tree-dark);
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.leaves::before {
+  top: -60px;
+  transform: scale(0.85);
+  border-bottom-color: var(--tree-light);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.leaves::after {
+  top: -100px;
+  transform: scale(0.7);
+  border-bottom-color: var(--tree-dark);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.snow-layer {
+  position: absolute;
+  width: 120%;
+  height: 15px;
+  background: var(--snow-white);
+  border-radius: 50%;
+  top: -10px;
+  left: -10%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 780px) {
+  .tree {
+    display: none;
+  }
+}
