@@ -36,7 +36,7 @@ project-folder
 ## 🛠️ How to Run the Project
 1. Clone this repository to your local machine.
    ```bash
-   git clone <repository-link>
+   git clone https://github.com/nandakiran-r/code-a-snowman.git
    ```
 2. Open `index.html` in your favorite browser.
 
